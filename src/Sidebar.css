@@ -1,0 +1,146 @@
+.burger-nav-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.burger-nav-div:focus {
+	outline: none;
+}
+.bm-item:focus {
+	outline: none;
+}
+/* Position and sizing of burger button */
+.bm-burger-button {
+	position: relative;
+	width: 40px;
+	height: 30px;
+	left: 66px;
+	top: 50px;
+}
+.burger-overlay {
+	background-color: black;
+}
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+	background-color: #1d1d1d;
+	height: 13% !important;
+	transform: scaleX(1);
+	box-shadow: none;
+	-webkit-transition-duration: all 0.4s linear;
+	transition-duration: all 0.4s linear;
+}
+.bm-burger-bars:nth-child(2) {
+	top: 35% !important;
+}
+.bm-burger-bars:last-child {
+	top: 70% !important;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+	background-color: #297a4d;
+	outline: none;
+	transform: scaleX(1.035);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 2);
+}
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+	width: 48px !important;
+	height: 48px !important;
+	right: 30px !important;
+	top: 35px !important;
+}
+.bm-cross-button > span {
+	top: 15px !important;
+	right: 15px !important;
+}
+/* Color/shape of close button cross */
+.bm-cross {
+	background: #bdc3c7 !important;
+	width: 4px !important;
+	height: 28px !important;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+	position: fixed;
+	height: 100%;
+	top: 0;
+}
+
+/* General sidebar styles */
+.bm-menu {
+	padding: 4em 1.5em 0;
+	background: #e8e8e8;
+}
+#page-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* Wrapper for item list
+.bm-item-list {
+	color: #b8b7ad;
+}
+
+/* Individual item */
+.bm-item {
+	/* display: inline-block; */
+}
+
+/* Styling of overlay */
+.bm-overlay {
+	/* background: rgba(0, 0, 0, 0.3); */
+}
+/* Individual item */
+.bm-item {
+	/* display: inline-block;
+
+	color: #d1d1d1;
+	margin-bottom: 10px;
+	text-align: left;
+	text-decoration: none;
+	transition: color 0.2s; */
+}
+
+.bm-item:hover {
+	/* color: #ffffff; */
+}
+
+/* tablets */
+/* @media screen and (max-width: 768px) and (orientation: portrait) */
+/* @media screen and (max-width: 1024px) and (orientation: landscape)  */
+
+/* mobile  */
+/* @media screen and (max-width: 414px) and (orientation: portrait) */
+/* @media screen and (max-width: 823px) and (orientation: landscape)  */
+
+@media screen and (max-width: 823px) and (orientation: landscape) {
+	.bm-burger-button {
+		top: 37px;
+	}
+	.bm-menu-wrap {
+		width: 220px !important;
+	}
+	.bm-cross-button > span {
+		top: 1px !important;
+		right: 18px !important;
+	}
+}
+
+@media screen and (max-width: 414px) and (orientation: portrait) {
+	.bm-burger-button {
+		left: 35px;
+		top: 47px;
+	}
+	.bm-menu-wrap {
+		width: 180px !important;
+	}
+	.bm-cross-button > span {
+		top: 0px !important;
+		right: 0px !important;
+	}
+}
