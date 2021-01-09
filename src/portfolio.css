@@ -1,0 +1,186 @@
+#portfolio-div {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+}
+.portfolio {
+	flex-direction: column;
+	height: auto;
+	width: 100%;
+	padding: 0 6em;
+}
+.nail-div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	padding: 1.5em 0 1em 0;
+	width: 100%;
+	height: auto;
+	flex-wrap: wrap;
+}
+.thumbnail-div {
+	display: flex;
+	width: 10%;
+	height: auto;
+	margin: 2.5em;
+	transition: transform ease-in 0.1s;
+}
+.thumbnail-img {
+	height: auto;
+	width: 100%;
+	align-self: flex-start;
+}
+.thumbnail-div:hover {
+	transform: scale(1.04);
+}
+.project-link-img:hover {
+	transform: scale(1.1);
+}
+.project-link-div {
+	position: fixed;
+	top: 4.6%;
+	right: 10.5%;
+}
+.project-link-img {
+	height: 50px;
+	width: auto;
+	transition: transform ease-in 0.1s;
+	background-color: white;
+	border-radius: 50%;
+}
+.click-prompt-div {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+.click-prompt-h3 {
+	font-size: 1.35em;
+}
+.prompt-arrow {
+	width: 1.5em;
+	height: 2em;
+	position: relative;
+	top: 1.15em;
+	color: #1d1d1d;
+}
+.close-button {
+	position: fixed;
+	top: 4%;
+	right: 2%;
+	height: 60px;
+	width: 60px;
+	color: #1d1d1d;
+	background-color: white;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: transform ease-in 0.1s;
+}
+.close-button:hover {
+	transform: scale(1.1);
+}
+
+/* for larger screens */
+@media only screen and (min-width: 1200px) {
+	.close-button {
+		right: 4%;
+	}
+}
+
+/* tablets */
+/* @media screen and (max-width: 768px) and (orientation: portrait) */
+/* @media screen and (max-width: 1024px) and (orientation: landscape)  */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+	.thumbnail-div {
+		width: 18%;
+	}
+	.project-link-img {
+		background-color: white;
+		border-radius: 50%;
+		padding: 0.05em;
+	}
+	.project-link-div {
+		top: 6.5%;
+		right: 19%;
+		width: 55px;
+		height: auto;
+	}
+	.close-button {
+		top: 6%;
+		right: 5.5%;
+	}
+	.portfolio {
+		margin-top: 0.5em;
+	}
+	.click-prompt-h3 {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+	.project-link-div {
+		top: 7.5%;
+		right: 12%;
+	}
+	.close-button {
+		top: 7%;
+		right: 4.5%;
+	}
+}
+
+/* mobile  */
+/* @media screen and (max-width: 414px) and (orientation: portrait) */
+/* @media screen and (max-width: 823px) and (orientation: landscape)  */
+
+@media screen and (max-width: 414px) and (orientation: portrait) {
+	.project-link-div {
+		top: 5%;
+		right: 24%;
+	}
+	.close-button {
+		top: 5%;
+		right: 6%;
+		height: 50px;
+		width: 50px;
+	}
+	.click-prompt-div {
+		margin-bottom: 0;
+	}
+	.click-prompt-h3 {
+		font-size: 1.1em;
+	}
+	.prompt-arrow {
+		width: 1.2em;
+		height: 1.8em;
+		top: 0.95em;
+	}
+	.thumbnail-div {
+		width: 20%;
+	}
+	.project-link-img {
+		background-color: white;
+		border-radius: 50%;
+		padding: 0.05em;
+	}
+	.portfolio {
+		padding: 5em 0;
+	}
+}
+
+@media screen and (max-width: 823px) and (orientation: landscape) {
+	.project-link-div {
+		top: 5%;
+		right: 16%;
+	}
+	.close-button {
+		top: 5%;
+		right: 6%;
+		height: 50px;
+		width: 50px;
+	}
+	.thumbnail-div {
+		width: 15%;
+	}
+}
